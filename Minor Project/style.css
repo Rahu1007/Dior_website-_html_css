@@ -1,0 +1,186 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+    padding-top: 1px;
+}
+#nav{
+     height: 12vh;
+     width: 100%;
+     /* background-color: rgb(148, 220, 14); */
+     margin-top: 40px;
+     border-top: 2px solid #000;
+     border-bottom:2px solid #000;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+#nav h1{
+    /* background-color: rgb(170, 227, 36); */
+    height: 100%;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    letter-spacing: -4px;
+    color: black;
+
+}
+#nav h2{
+    /* background-color: rgb(170, 227, 36); */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right:2px solid #000;
+    font-size: 20px;
+    font-weight: 500;
+    /* background-color: blue; */
+}
+
+#nav h2 :nth-last-child(2){
+    width: 40%;
+    }
+
+#nav h2 :nth-last-child(1){
+width: 10%;
+}
+
+#center{
+
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    padding: 50px;
+    position: relative;
+    border: 2px solid #000;
+}
+#content{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(168, 37, 229); */
+    position: relative;
+    border: 2px solid #000;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+}
+
+#overlay{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* background-color: red; */
+    padding: 1vw;
+    color: #000;
+}
+#over1{
+ display: flex;
+ align-items: center;
+ justify-content: space-between; 
+}
+#over1 h1{
+    font-family: inherit;
+    font-size: 3.6vw;
+    font-weight: 100;
+}
+/* #over h2{
+    font-size: 1vw;
+    padding: 2vw 2.4vw;
+    background-color: blue;
+    border-radius: 50%;
+    border: 2px solid #fff;
+} */
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    border-top: 2px solid #000;
+   }
+
+#over h4{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+#scroll{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    padding: 1vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+#container{
+    height: 100%;
+    width: 110%;
+    /* background-color: blue; */
+    display: inline-block;
+    animation-name:anime ;
+    animation-duration:10s ;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+#scroll img{
+    /* display: none; */
+height: 95%;
+border-radius: 100%;
+width: 14%;
+margin: 3vw;
+object-fit: cover;
+object-position: 30% 30%;
+}
+@keyframes anime{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#alphabet {
+    height: 10vh;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border: 2px solid blue; /* Debugging border */
+    z-index: 10; /* Ensure it is above other elements */
+}
+
+#alphabet h5{
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+    border-bottom: 2px solid #000;
+
+}
+#page2{
+    height: 100%;
+    width: 100%;
+}
